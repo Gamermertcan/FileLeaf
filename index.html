@@ -79,27 +79,34 @@
         <h1>FileLeaf</h1>
     </header>
     <div class="container">
-        <div class="content">
+        <div class="aboutus content">
             <h2>About Us</h2>
             <p>We Are Making Helpful Project For Being Helpful :></p>
         </div>
-        <div class="read-more-btn" onclick="expandAboutUs()">Read More</div>
+        <div id="aboutus-btn" class="read-more-btn" onclick="expandAboutUs()">Read More</div>
+        <div class="credits content" id="credits">
+            <h2>Credits</h2>
+            <p>Owner: "Gamer Mertcan"</p>
+            <p>Designer: "Tango_844"</p>
+        </div>
+        <div id="credits-btn" class="expand-btn" onclick="expandCredits()">Read More</div>
         <div class="copyright-text" id="copyright">
             <h2>Copyright</h2>
             <p>Copyright &copy; 2024 FileLeaf</p>
             <p><br>We Dont Want To See Some Other Companys Using FileLeaf Contents</p>
             <p>We Dont Want To See Special Files of FileLeaf in Someone</p>
         </div>
-        <div class="expand-btn" onclick="expandCopyright()">Read More</div>
+        <div id="copyright-btn" class="expand-btn" onclick="expandCopyright()">Read More</div>
     </div>
     <footer>
         <p onclick="expandAboutUs()">About us</p>
+        <p onclick="expandCredits()">Credits</p>
         <p onclick="expandCopyright()">Copyright</p>
     </footer>
     <script>
         function expandAboutUs() {
-            var content = document.querySelector('.content');
-            var btn = document.querySelector('.read-more-btn');
+            var content = document.querySelector('.aboutus');
+            var btn = document.querySelector('#aboutus-btn');
 
             if (content.style.display === 'none') {
                 content.style.display = 'block';
@@ -110,9 +117,22 @@
             }
         }
 
+        function expandCredits() {
+            var creditsText = document.getElementById('credits');
+            var btn = document.querySelector('#credits-btn');
+
+            if (creditsText.style.display === 'none') {
+                creditsText.style.display = 'block';
+                btn.innerHTML = 'Close';
+            } else {
+                creditsText.style.display = 'none';
+                btn.innerHTML = 'Read More';
+            }
+        }
+
         function expandCopyright() {
             var copyrightText = document.getElementById('copyright');
-            var btn = document.querySelector('.expand-btn');
+            var btn = document.querySelector('#copyright-btn');
 
             if (copyrightText.style.display === 'none') {
                 copyrightText.style.display = 'block';
@@ -124,4 +144,4 @@
         }
     </script>
 </body>
-  </html>
+</html>
