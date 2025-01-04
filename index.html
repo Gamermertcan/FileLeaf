@@ -6,14 +6,53 @@
     <title>FileLeaf</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .gbg {
-            background-image: linear-gradient(to top, rgb(21 128 61 / var(--tw-text-opacity, 1)) 0%, rgb(190 242 100 / var(--tw-text-opacity, 1)) 100%);
+        .hero-bg {
+            background: linear-gradient(135deg, #4caf50, #81c784);
         }
     </style>
 </head>
-<body class="gbg min-h-screen">
-    <div class="w-full min-h-20 bg-lime-500 fixed text-center p-5 gbg">
-        <h1 class="font-serif transition-all bg-gradient-to-tr from-lime-900 to-green-300 bg-clip-text text-transparent hover:bg-gradient-to-tr hover:from-lime-600 hover:to-green-300 font-black text-6xl outline-green-900 hover:tracking-wider">FileLeaf</h1>
-    </div>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-3xl font-bold text-green-600">FileLeaf</div>
+                <div>
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-3">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-3">Features</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-3">Pricing</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600 px-3">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-bg min-h-screen flex items-center justify-center text-center text-white">
+        <div class="px-8">
+            <h1 class="text-5xl font-extrabold mb-6">Simplify File Management</h1>
+            <p class="text-lg mb-8">Secure, fast, and reliable solutions for all your file handling needs.</p>
+            <a href="#" class="bg-white text-green-600 font-bold py-3 px-6 rounded-full shadow-md hover:bg-green-100 transition">Get Started</a>
+        </div>
+    </section>
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Features</h2>
+                <p class="text-gray-600 mt-4">Powerful tools to make your work easier</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Fast Uploads</h3>
+                    <p class="text-gray-600">Upload files quickly and securely with our optimized system.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Secure Storage</h3>
+                    <p class="text-gray-600">Your files are safe with end-to-end encryption.</p>
+                </div>
+                <div class="bg-white shadow-md rounded-lg p-6 text-center">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Easy Sharing</h3>
+                    <p class="text-gray-600">Share files with just one click and track their usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
